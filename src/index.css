@@ -4,11 +4,11 @@
 :root {
   /* Font size variables */
   --title: 2.4rem;
-  --text: 1.4rem;
+  --text: 1.5rem;
 
   /* Color palette*/
   --bg-very-dark-blue: #131518;
-  --bg-black-gradient: #232a34;
+  --bg-black-gradient: #1c222b;
   --bg-dark-blue: #262e38;
   --accent-orange: #fc7614;
   --text-white: #fff;
@@ -32,5 +32,8 @@ body {
 
 #root {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--bg-very-dark-blue);
 }
