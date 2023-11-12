@@ -6,9 +6,9 @@ const ratings = [1, 2, 3, 4, 5];
 const RatingScreen = () => {
   return (
     <>
-      <span className={styles.starWrapper}>
+      <div className={styles.starWrapper}>
         <img src={Star} alt="Orange Star" />
-      </span>
+      </div>
       <h1 className={styles.title}>How did we do?</h1>
       <p className={styles.paragraph}>
         Please let us know how we did with your support request. All feedback is
