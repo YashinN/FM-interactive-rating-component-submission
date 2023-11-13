@@ -38,6 +38,17 @@
   border: none;
 }
 
+.ratingBtn:hover {
+  color: var(--text-white);
+  background-color: var(--text-medium-grey);
+}
+
+.ratingBtn.active,
+.ratingBtn:active {
+  background-color: var(--accent-orange);
+  color: var(--text-white);
+}
+
 .submitBtn {
   background-color: var(--accent-orange);
   color: var(--text-white);

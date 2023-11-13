@@ -25,7 +25,7 @@ function App() {
   return (
     <LayoutMain>
       <CardLayout>
-        <RatingScreen dispatch={dispatch} />
+        <RatingScreen dispatch={dispatch} currRating={rating} />
         {/* <MessageScreen /> */}
       </CardLayout>
     </LayoutMain>
