@@ -3,8 +3,10 @@
 
 :root {
   /* Font size variables */
-  --title: 2.4rem;
-  --text: 1.5rem;
+  --title-desktop: 3.2rem;
+  --title-mobile: 2.4rem;
+  --text-desktop: 1.5rem;
+  --text-mobile: 1.4rem;
 
   /* Color palette*/
   --bg-very-dark-blue: #131518;
@@ -36,4 +38,5 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--bg-very-dark-blue);
+  padding: 0 2.4rem;
 }

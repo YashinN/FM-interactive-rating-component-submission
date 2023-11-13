@@ -9,3 +9,10 @@
 .textCenter {
   text-align: center;
 }
+
+@media (max-width: 450px) {
+  .card {
+    border-radius: 1.5rem;
+    padding: 2.4rem;
+  }
+}

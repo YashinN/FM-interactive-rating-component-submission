@@ -1,15 +1,17 @@
 .title {
-  font-size: 2.4rem;
+  font-size: var(--title-desktop);
   color: var(--text-white);
   margin-bottom: 1.5rem;
+  font-weight: 700;
 }
 
 .paragraph {
   margin-bottom: 2.4rem;
-  font-size: var(--text);
+  font-size: var(--text-desktop);
   font-size: 15px;
   color: var(--text-light-grey);
   line-height: 2.2rem;
+  font-weight: 400;
 }
 
 .starWrapper {
@@ -27,6 +29,8 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 3.2rem;
+  font-weight: 400;
+  font-size: var(--text-desktop);
 }
 
 .ratingBtn {
@@ -52,13 +56,14 @@
 .submitBtn {
   background-color: var(--accent-orange);
   color: var(--text-white);
-  font-size: var(--text);
+  font-size: var(--text-desktop);
   text-transform: uppercase;
   letter-spacing: 1.9px;
   width: 100%;
   border-radius: 2rem;
   padding: 1.2rem 0;
   border: none;
+  height: 4.5rem;
 }
 
 .submitBtn:hover {
@@ -75,4 +80,32 @@
   transform: translateY(1px);
   transition: ease-in 0.1s;
   transition-property: transform;
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: var(--title-mobile);
+    margin-bottom: 1rem;
+  }
+
+  .paragraph,
+  .submitBtn,
+  .ratingGroup {
+    font-size: var(--text-mobile);
+  }
+
+  .ratingBtn {
+    height: 4.2rem;
+    width: 4.2rem;
+  }
+
+  .ratingGroup {
+    margin-bottom: 2.4rem;
+  }
+
+  .starWrapper {
+    margin-bottom: 1.6rem;
+    height: 4rem;
+    width: 4rem;
+  }
 }
