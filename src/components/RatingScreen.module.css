@@ -60,3 +60,19 @@
   padding: 1.2rem 0;
   border: none;
 }
+
+.submitBtn:hover {
+  background-color: var(--text-white);
+  color: var(--accent-orange);
+  transform: translateY(-3px);
+  transition: ease-in 0.2s;
+  transition-property: transform;
+}
+
+.submitBtn:active {
+  background-color: var(--accent-orange);
+  color: var(--text-white);
+  transform: translateY(1px);
+  transition: ease-in 0.1s;
+  transition-property: transform;
+}

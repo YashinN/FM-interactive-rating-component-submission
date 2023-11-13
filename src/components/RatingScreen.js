@@ -31,7 +31,16 @@ const RatingScreen = ({ dispatch, currRating }) => {
         ))}
       </div>
 
-      <button className={styles.submitBtn}>submit</button>
+      <button
+        className={styles.submitBtn}
+        onClick={() =>
+          setTimeout(() => {
+            dispatch({ type: "setSubmit" });
+          }, 400)
+        }
+      >
+        submit
+      </button>
     </>
   );
 };

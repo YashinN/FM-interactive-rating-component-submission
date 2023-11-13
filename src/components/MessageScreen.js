@@ -1,7 +1,7 @@
 import styles from "./MessageScreen.module.css";
 import PaymentSvg from "./svg/Online payment_Two Color.svg";
 
-const MessageScreen = () => {
+const MessageScreen = ({ rating }) => {
   return (
     <>
       <img
@@ -10,7 +10,7 @@ const MessageScreen = () => {
         alt="mobile phone showing paymnet process"
       />
       <div className={styles.feedbackWrapper}>
-        <p className={styles.feedbackText}>You selected 4 out of 5</p>
+        <p className={styles.feedbackText}>You selected {rating} out of 5</p>
       </div>
       <h1 className={styles.title}>Thank you!</h1>
 

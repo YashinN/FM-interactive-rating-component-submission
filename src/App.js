@@ -13,7 +13,12 @@ const initialState = {
 const reducer = (state, action) => {
   switch (action.type) {
     case "setRating":
-      return { ...state, rating: action.payload, isSubmit: true };
+      return { ...state, rating: action.payload };
+    case "setSubmit":
+      return {
+        ...state,
+        isSubmit: state.rating === null ? state.isSubmit : true,
+      };
     default:
       throw new Error("Action Unknown");
   }
@@ -25,8 +30,8 @@ function App() {
   return (
     <LayoutMain>
       <CardLayout>
-        <RatingScreen dispatch={dispatch} currRating={rating} />
-        {/* <MessageScreen /> */}
+        {!isSubmit && <RatingScreen dispatch={dispatch} currRating={rating} />}
+        {isSubmit && <MessageScreen rating={rating} />}
       </CardLayout>
     </LayoutMain>
   );
