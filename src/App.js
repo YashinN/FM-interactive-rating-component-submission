@@ -29,7 +29,7 @@ function App() {
 
   return (
     <LayoutMain>
-      <CardLayout>
+      <CardLayout isSubmit={isSubmit}>
         {!isSubmit && <RatingScreen dispatch={dispatch} currRating={rating} />}
         {isSubmit && <MessageScreen rating={rating} />}
       </CardLayout>

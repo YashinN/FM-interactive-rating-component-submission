@@ -4,5 +4,8 @@
   min-width: 32.7rem;
   border-radius: 3rem;
   padding: 3.2rem;
+}
+
+.textCenter {
   text-align: center;
 }
