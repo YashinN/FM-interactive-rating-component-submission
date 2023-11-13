@@ -3,7 +3,10 @@ import Star from "./svg/Star.svg";
 
 const ratings = [1, 2, 3, 4, 5];
 
-const RatingScreen = () => {
+const RatingScreen = ({ dispatch }) => {
+  const handleRating = (rating) => {
+    dispatch({ type: "setRating", payload: rating + 1 });
+  };
   return (
     <>
       <div className={styles.starWrapper}>
@@ -17,7 +20,12 @@ const RatingScreen = () => {
 
       <div className={styles.ratingGroup}>
         {ratings.map((rating, index) => (
-          <button className={styles.ratingBtn}>{index + 1}</button>
+          <button
+            className={styles.ratingBtn}
+            onClick={() => handleRating(index)}
+          >
+            {index + 1}
+          </button>
         ))}
       </div>
 
